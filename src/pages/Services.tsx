@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaHome, FaBuilding, FaHammer, FaClipboardList, FaShieldAlt, FaBolt, FaUsers, FaClock, FaPhone, FaCheckCircle } from 'react-icons/fa';
 
 const Services = () => {
   const services = [
@@ -13,7 +14,7 @@ const Services = () => {
         'Deck & Patio Construction',
         'Garage Construction'
       ],
-      icon: '🏠',
+      icon: FaHome,
       image: 'residential-construction.jpg'
     },
     {
@@ -27,7 +28,7 @@ const Services = () => {
         'Medical Facilities',
         'Educational Buildings'
       ],
-      icon: '🏢',
+      icon: FaBuilding,
       image: 'commercial-construction.jpg'
     },
     {
@@ -41,7 +42,7 @@ const Services = () => {
         'Energy Efficiency Upgrades',
         'Space Optimization'
       ],
-      icon: '🔨',
+      icon: FaHammer,
       image: 'renovation-remodeling.jpg'
     },
     {
@@ -55,7 +56,7 @@ const Services = () => {
         'Progress Reporting',
         'Risk Management'
       ],
-      icon: '📋',
+      icon: FaClipboardList,
       image: 'project-management.jpg'
     }
   ];
@@ -63,7 +64,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-500 text-white py-16">
+      <section className="bg-gray-50 text-gray-800 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -85,7 +86,7 @@ const Services = () => {
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                   <div className="flex items-center mb-6">
                     <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-3xl">{service.icon}</span>
+                      <service.icon className="text-3xl text-primary-600" />
                     </div>
                     <h2 className="text-3xl font-bold text-secondary-800">{service.title}</h2>
                   </div>
@@ -102,7 +103,7 @@ const Services = () => {
                   </div>
                   <Link
                     to="/contact"
-                    className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 inline-block"
+                    className="bg-primary-100 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 inline-block"
                   >
                     Get Quote for {service.title}
                   </Link>
@@ -150,7 +151,7 @@ const Services = () => {
               }
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="bg-primary-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold">
+                <div className="bg-primary-100 text-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold">
                   {process.step}
                 </div>
                 <h3 className="text-xl font-semibold text-secondary-800 mb-4">{process.title}</h3>
@@ -173,36 +174,38 @@ const Services = () => {
               {
                 title: 'Licensed & Insured',
                 description: 'Fully licensed contractor with comprehensive insurance coverage for your peace of mind.',
-                icon: '🛡️'
+                icon: FaShieldAlt
               },
               {
                 title: 'Quality Materials',
                 description: 'We use only the highest quality materials from trusted suppliers and manufacturers.',
-                icon: '⚡'
+                icon: FaBolt
               },
               {
                 title: 'Experienced Team',
                 description: 'Our skilled craftsmen bring decades of combined experience to every project.',
-                icon: '👥'
+                icon: FaUsers
               },
               {
                 title: 'On-Time Delivery',
                 description: 'We respect your schedule and consistently deliver projects on time and on budget.',
-                icon: '⏰'
+                icon: FaClock
               },
               {
                 title: '24/7 Support',
                 description: 'Available around the clock for emergency situations and ongoing support.',
-                icon: '📞'
+                icon: FaPhone
               },
               {
                 title: 'Warranty Protection',
                 description: 'Comprehensive warranties on all work performed, ensuring long-term satisfaction.',
-                icon: '✅'
+                icon: FaCheckCircle
               }
             ].map((benefit, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                <div className="text-4xl mb-4 text-primary-600">
+                  <benefit.icon />
+                </div>
                 <h3 className="text-xl font-semibold text-secondary-800 mb-3">{benefit.title}</h3>
                 <p className="text-secondary-600">{benefit.description}</p>
               </div>
@@ -212,7 +215,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary-600 text-white py-16">
+      <section className="bg-primary-100 text-gray-800 py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Construction Project?</h2>
           <p className="text-xl mb-8 text-primary-100">
@@ -227,7 +230,7 @@ const Services = () => {
             </Link>
             <Link
               to="/projects"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition-colors duration-200 inline-block"
+              className="border-2 border-gray-100 text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 hover:text-primary-600 transition-colors duration-200 inline-block"
             >
               View Our Work
             </Link>

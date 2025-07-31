@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-primary-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
+            <div className="bg-primary-600 text-gray-800 px-3 py-2 rounded-lg font-bold text-xl">
               G
             </div>
             <span className="text-2xl font-bold text-secondary-800">

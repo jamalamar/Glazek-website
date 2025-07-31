@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaArrowRight } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,32 +26,45 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-500 text-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-secondary-800 bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-700 text-white py-24 md:py-32 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-transparent"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Get In Touch
-            </h1>
-            <p className="text-xl text-primary-100">
-              Ready to start your construction project? Contact us for a free consultation and quote.
-            </p>
+            <div className="animate-fade-in">
+              <h1 className="text-5xl md:text-6xl font-display font-bold mb-8 leading-tight">
+                Get In
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
+                  Touch
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-secondary-300 max-w-3xl mx-auto leading-relaxed">
+                Ready to start your construction project? Contact us for a free consultation and quote.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-20">
+      <section className="py-24 bg-neutral-50 bg-gradient-to-b from-white to-neutral-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-secondary-800 mb-6">Request a Quote</h2>
-              <p className="text-lg text-secondary-600 mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+                <FaEnvelope className="text-2xl text-primary-600" />
+              </div>
+              <h2 className="text-4xl font-display font-bold text-secondary-900 mb-6">Request a Quote</h2>
+              <p className="text-lg text-secondary-600 mb-10 leading-relaxed">
                 Fill out the form below and we'll get back to you within 24 hours with a detailed estimate for your project.
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-secondary-700 mb-2">
@@ -62,7 +76,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-5 py-4 border-2 border-neutral-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 hover:border-primary-300"
                       placeholder="Your full name"
                     />
                   </div>
@@ -76,7 +90,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-5 py-4 border-2 border-neutral-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 hover:border-primary-300"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -92,7 +106,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-5 py-4 border-2 border-neutral-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 hover:border-primary-300"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -104,7 +118,7 @@ const Contact = () => {
                       name="projectType"
                       value={formData.projectType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-5 py-4 border-2 border-neutral-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 hover:border-primary-300"
                     >
                       <option value="">Select project type</option>
                       <option value="residential">Residential Construction</option>
@@ -126,16 +140,17 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-5 py-4 border-2 border-neutral-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 hover:border-primary-300 resize-none"
                     placeholder="Please describe your project, timeline, budget range, and any specific requirements..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-primary-600 text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-primary-700 transition-colors duration-200"
+                  className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-5 px-8 rounded-xl font-semibold text-lg shadow-strong hover:shadow-glow transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center group"
                 >
                   Submit Request
+                  <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
               </form>
             </div>
@@ -146,8 +161,8 @@ const Contact = () => {
               
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <span className="text-2xl">📞</span>
+                  <div className="bg-gradient-to-br from-primary-100 to-primary-200 p-4 rounded-xl transition-all duration-200 hover:shadow-md hover:scale-105">
+                    <FaPhone className="text-2xl text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-secondary-800 mb-1">Phone</h3>
@@ -157,8 +172,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <span className="text-2xl">✉️</span>
+                  <div className="bg-gradient-to-br from-primary-100 to-primary-200 p-4 rounded-xl transition-all duration-200 hover:shadow-md hover:scale-105">
+                    <FaEnvelope className="text-2xl text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-secondary-800 mb-1">Email</h3>
@@ -168,8 +183,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <span className="text-2xl">📍</span>
+                  <div className="bg-gradient-to-br from-primary-100 to-primary-200 p-4 rounded-xl transition-all duration-200 hover:shadow-md hover:scale-105">
+                    <FaMapMarkerAlt className="text-2xl text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-secondary-800 mb-1">Office Address</h3>
@@ -181,8 +196,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <span className="text-2xl">🕒</span>
+                  <div className="bg-gradient-to-br from-primary-100 to-primary-200 p-4 rounded-xl transition-all duration-200 hover:shadow-md hover:scale-105">
+                    <FaClock className="text-2xl text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-secondary-800 mb-1">Business Hours</h3>
@@ -219,26 +234,27 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-neutral-100 bg-gradient-to-b from-neutral-50 to-neutral-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-secondary-800 mb-4">Find Our Office</h2>
-            <p className="text-lg text-secondary-600">
+            <h2 className="text-4xl font-display font-bold text-secondary-900 mb-4">Find Our Office</h2>
+            <p className="text-xl text-secondary-600 max-w-2xl mx-auto">
               Visit us at our convenient location or schedule a site visit
             </p>
           </div>
           
-          <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-            <span className="text-secondary-500 text-lg">Interactive Map Coming Soon</span>
+          <div className="bg-gradient-to-br from-white to-neutral-100 border-2 border-neutral-200 rounded-xl h-96 flex items-center justify-center shadow-medium">
+            <span className="text-secondary-500 text-lg font-medium">Interactive Map Coming Soon</span>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20">
+      <section className="py-24 bg-neutral-50 bg-gradient-to-b from-white to-neutral-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-secondary-800 mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-display font-bold text-secondary-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-secondary-600">Common questions about our construction services</p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
@@ -264,9 +280,9 @@ const Contact = () => {
                 answer: 'We stand behind our work with comprehensive warranties. Specific warranty terms vary by project type, but we ensure all work meets our high-quality standards.'
               }
             ].map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-lg font-semibold text-secondary-800 mb-3">{faq.question}</h3>
-                <p className="text-secondary-600">{faq.answer}</p>
+              <div key={index} className="bg-gradient-to-br from-white to-neutral-50 border-2 border-neutral-200 rounded-xl shadow-medium p-8 hover:shadow-strong transition-all duration-200 hover:border-primary-200">
+                <h3 className="text-xl font-semibold text-secondary-900 mb-4">{faq.question}</h3>
+                <p className="text-secondary-600 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -274,17 +290,18 @@ const Contact = () => {
       </section>
 
       {/* Emergency Contact */}
-      <section className="bg-red-600 text-white py-12">
+      <section className="bg-red-500 bg-gradient-to-r from-red-500 to-red-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Emergency Construction Services</h2>
-          <p className="text-lg mb-6">
+          <h2 className="text-3xl font-display font-bold mb-6">Emergency Construction Services</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
             Need immediate assistance? We offer 24/7 emergency services for urgent construction issues.
           </p>
           <a
             href="tel:5551234568"
-            className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-red-50 transition-colors duration-200 inline-block"
+            className="bg-white text-red-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-red-50 shadow-strong hover:shadow-glow transform hover:scale-105 transition-all duration-200 inline-flex items-center group"
           >
             Call Emergency Line: (555) 123-4568
+            <FaPhone className="ml-3 group-hover:scale-110 transition-transform duration-200" />
           </a>
         </div>
       </section>

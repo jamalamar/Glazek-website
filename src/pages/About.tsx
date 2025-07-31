@@ -1,8 +1,10 @@
+import { FaBullseye, FaEye, FaGem, FaCheckCircle } from 'react-icons/fa';
+
 const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-secondary-700 to-secondary-500 text-white py-16">
+      <section className="bg-gray-50 text-gray-800 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -54,7 +56,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🎯</span>
+                <FaBullseye className="text-2xl text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-secondary-800 mb-4">Our Mission</h3>
               <p className="text-secondary-600">
@@ -65,7 +67,7 @@ const About = () => {
 
             <div className="text-center">
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">👁️</span>
+                <FaEye className="text-2xl text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-secondary-800 mb-4">Our Vision</h3>
               <p className="text-secondary-600">
@@ -76,7 +78,7 @@ const About = () => {
 
             <div className="text-center">
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">💎</span>
+                <FaGem className="text-2xl text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-secondary-800 mb-4">Our Values</h3>
               <ul className="text-secondary-600 text-left">
@@ -159,7 +161,7 @@ const About = () => {
             ].map((cert, index) => (
               <div key={index} className="bg-white rounded-lg p-4 text-center shadow-md">
                 <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-primary-600 text-xl">✓</span>
+                  <FaCheckCircle className="text-primary-600 text-xl" />
                 </div>
                 <p className="text-sm font-medium text-secondary-700">{cert}</p>
               </div>
