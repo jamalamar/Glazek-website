@@ -1,25 +1,63 @@
-const Footer = () => {
+import Link from 'next/link'
+import { Phone, Mail, MapPin } from 'lucide-react'
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="bg-secondary-800 text-gray-100 py-8">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex items-center space-x-2">
-            <div className="bg-primary-600 text-gray-100 px-3 py-2 rounded-lg font-bold text-xl">
-              G
-            </div>
-            <span className="text-xl font-bold text-gray-100">Glazek LLC</span>
-          </div>
-          
-          <div className="text-center md:text-right">
-            <p className="text-gray-300 mb-1">(555) 123-4567 • info@glazekllc.com</p>
-            <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Glazek LLC. All rights reserved. Licensed & Insured.
+    <footer className="bg-gray-900 text-white">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Glazek LLC</h3>
+            <p className="text-gray-300 mb-4">
+              Delivering superior construction solutions through collaborative, technology-driven processes with the highest standards of safety, quality, and transparency.
             </p>
           </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <div className="space-y-2">
+              <Link href="/about" className="block text-gray-300 hover:text-white transition-colors">
+                About Us
+              </Link>
+              <Link href="/services" className="block text-gray-300 hover:text-white transition-colors">
+                Services
+              </Link>
+              <Link href="/projects" className="block text-gray-300 hover:text-white transition-colors">
+                Projects
+              </Link>
+              <Link href="/contact" className="block text-gray-300 hover:text-white transition-colors">
+                Contact
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 mr-2 text-blue-400" />
+                <span className="text-gray-300">(555) 123-4567</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-5 w-5 mr-2 text-blue-400" />
+                <span className="text-gray-300">info@glazekllc.com</span>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-blue-400" />
+                <span className="text-gray-300">Your City, State</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p className="text-gray-300">
+            © {currentYear} Glazek LLC. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}
