@@ -68,7 +68,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             {...register('name', { required: 'Name is required' })}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2 border"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border text-base"
           />
           {errors.name && (
             <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -89,7 +89,7 @@ export default function ContactForm() {
                 message: 'Invalid email address'
               }
             })}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2 border"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border text-base"
           />
           {errors.email && (
             <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -104,7 +104,7 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             {...register('phone')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2 border"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border text-base"
           />
         </div>
 
@@ -116,7 +116,7 @@ export default function ContactForm() {
             type="text"
             id="company"
             {...register('company')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2 border"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border text-base"
           />
         </div>
       </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full flex justify-center items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full flex justify-center items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[48px]"
         >
           {isSubmitting ? (
             <>

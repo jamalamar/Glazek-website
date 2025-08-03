@@ -164,13 +164,19 @@ export default function Services() {
             <p className="mt-4 text-lg text-gray-600">
               Contact us today to discuss your construction needs and get a personalized quote.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
               >
-                Get a Free Quote
-                <ArrowRight className="ml-2 h-4 w-4" />
+                Get Your Free Project Estimate
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+              <Link
+                href="tel:+15551234567"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-lg font-semibold rounded-md text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                📞 Call (555) 123-4567
               </Link>
             </div>
           </div>

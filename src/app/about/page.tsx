@@ -152,6 +152,67 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Certifications & Credentials
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Fully licensed, bonded, and certified to ensure your project meets all safety and quality standards
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
+                <span className="text-2xl">🏗️</span>
+              </div>
+              <h3 className="font-semibold text-gray-900">Licensed Contractor</h3>
+              <p className="text-sm text-gray-600">State License #123456</p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
+                <span className="text-2xl">🛡️</span>
+              </div>
+              <h3 className="font-semibold text-gray-900">Fully Insured</h3>
+              <p className="text-sm text-gray-600">$2M General Liability</p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="font-semibold text-gray-900">OSHA Certified</h3>
+              <p className="text-sm text-gray-600">Safety Compliance</p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
+                <span className="text-2xl">🏆</span>
+              </div>
+              <h3 className="font-semibold text-gray-900">BBB A+ Rating</h3>
+              <p className="text-sm text-gray-600">Accredited Business</p>
+            </div>
+          </div>
+
+          <div className="mt-16 bg-blue-50 rounded-lg p-8">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Professional Associations
+              </h3>
+              <div className="flex flex-wrap justify-center gap-8 text-gray-600">
+                <span>• Associated General Contractors (AGC)</span>
+                <span>• National Association of Home Builders (NAHB)</span>
+                <span>• Green Building Council</span>
+                <span>• Construction Financial Management Association</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
