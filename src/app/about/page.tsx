@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Target, Eye, Award, Users } from 'lucide-react'
+import { Target, Eye, Award, Users, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Us - Glazek LLC',
@@ -16,8 +16,19 @@ export default function About() {
               About Glazek LLC
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
-              We are dedicated to delivering superior construction solutions through collaborative, technology-driven processes with the highest standards of safety, quality, and transparency.
+              We're the fresh alternative to traditional construction - combining proven expertise with innovative approaches to deliver exceptional results. Based in Texas, serving nationwide with modern solutions for today's construction challenges.
             </p>
+            <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center gap-2 text-blue-800 mb-2">
+                <MapPin className="h-5 w-5" />
+                <span className="font-semibold">Our Service Area</span>
+              </div>
+              <p className="text-blue-700 text-center">
+                <strong>Headquarters:</strong> Texas • <strong>Service Area:</strong> Nationwide
+                <br />
+                <span className="text-sm">Local expertise, national reach - we bring Texas work ethic everywhere we build</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -33,7 +44,10 @@ export default function About() {
                 To deliver superior construction solutions through a collaborative, technology-driven process. We are committed to completing projects with the highest standards of safety, quality, and transparency, ensuring client satisfaction and building lasting relationships.
               </p>
               <p className="mt-4 text-lg text-gray-600">
-                Every project we undertake is an opportunity to demonstrate our commitment to excellence and to strengthen the trust our clients place in us.
+                As a forward-thinking construction company, we're not bound by outdated practices or bureaucratic processes. Every project benefits from our complete focus, cutting-edge technology, and fresh perspective on construction excellence.
+              </p>
+              <p className="mt-4 text-lg text-gray-600">
+                Being new in the industry means we're hungry to prove ourselves, responsive to your needs, and committed to exceeding expectations on every single project.
               </p>
             </div>
             <div className="mt-10 lg:mt-0">
@@ -128,26 +142,69 @@ export default function About() {
               Why Choose Glazek LLC?
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              With years of experience and a proven track record, we bring expertise, reliability, and innovation to every construction project.
+              We bring fresh energy, modern expertise, and complete dedication to every project. Our approach combines innovative methods with proven construction principles to deliver exceptional results.
             </p>
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600">100%</div>
-              <div className="mt-2 text-sm font-medium text-gray-900">Client Satisfaction</div>
+              <div className="mt-2 text-sm font-medium text-gray-900">Project Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">50+</div>
-              <div className="mt-2 text-sm font-medium text-gray-900">Projects Completed</div>
+              <div className="text-4xl font-bold text-blue-600">Zero</div>
+              <div className="mt-2 text-sm font-medium text-gray-900">Safety Incidents</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">15+</div>
-              <div className="mt-2 text-sm font-medium text-gray-900">Years Experience</div>
+              <div className="text-4xl font-bold text-blue-600">$2M</div>
+              <div className="mt-2 text-sm font-medium text-gray-900">Insurance Coverage</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600">24/7</div>
-              <div className="mt-2 text-sm font-medium text-gray-900">Support</div>
+              <div className="mt-2 text-sm font-medium text-gray-900">Communication</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              The Fresh Alternative
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Why working with a new construction company gives you distinct advantages
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Your Project Gets Complete Focus</h3>
+              <p className="text-gray-600">
+                Unlike established companies juggling dozens of projects, we give every client our undivided attention. Your project isn't just another number - it's our opportunity to prove excellence and build a lasting relationship.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Modern Methods, Not Legacy Limitations</h3>
+              <p className="text-gray-600">
+                We're not stuck in outdated practices or bureaucratic processes. Our fresh approach embraces the latest technology, materials, and construction methods to deliver superior results efficiently.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Hungry to Exceed Expectations</h3>
+              <p className="text-gray-600">
+                Every project is a chance to demonstrate our capabilities and earn your trust. This drive for excellence means we go above and beyond on every detail, timeline, and client interaction.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Agile and Responsive</h3>
+              <p className="text-gray-600">
+                Without layers of bureaucracy, we make decisions quickly and adapt to changes efficiently. When you need answers or adjustments, you get them fast - not after committee meetings and approval chains.
+              </p>
             </div>
           </div>
         </div>

@@ -68,7 +68,7 @@ export default function Services() {
               Our Services
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
-              Comprehensive construction solutions tailored to meet your specific needs with the highest standards of quality and professionalism.
+              Modern construction solutions powered by innovative technology, proven expertise, and complete dedication to your project's success.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function Services() {
               Our Construction Process
             </h2>
             <p className="mt-4 text-lg text-blue-100 max-w-3xl mx-auto">
-              We follow a proven methodology that ensures project success from initial consultation to final delivery.
+              Our streamlined, technology-driven process ensures efficient project delivery with transparent communication at every step.
             </p>
           </div>
 
@@ -150,6 +150,73 @@ export default function Services() {
               <p className="mt-2 text-blue-100">
                 Final inspection, project handover, and ongoing support.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              The Glazek Advantage
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              What makes our approach different from traditional construction companies
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Technology-First Approach</h3>
+              <p className="text-gray-600 mb-4">
+                We leverage cutting-edge construction technology, digital project management, and real-time communication tools to keep your project on track and transparent.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Digital project tracking and reporting</li>
+                <li>• Advanced construction planning software</li>
+                <li>• Real-time progress updates</li>
+                <li>• Virtual collaboration tools</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Agile & Responsive</h3>
+              <p className="text-gray-600 mb-4">
+                Without bureaucratic layers, we make decisions quickly and adapt to changes efficiently. Your questions get answered fast, and adjustments happen smoothly.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Quick decision-making process</li>
+                <li>• Direct communication with project leaders</li>
+                <li>• Flexible adaptation to changes</li>
+                <li>• Streamlined approval workflows</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Complete Project Focus</h3>
+              <p className="text-gray-600 mb-4">
+                Every project receives our undivided attention and resources. You're not just another job - you're our opportunity to demonstrate excellence and build a lasting relationship.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Dedicated project teams</li>
+                <li>• Personal attention to every detail</li>
+                <li>• Flexible resource allocation</li>
+                <li>• Long-term relationship focus</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Modern Safety Standards</h3>
+              <p className="text-gray-600 mb-4">
+                We implement the latest safety protocols and training, ensuring zero incidents while maintaining the highest productivity standards on every project.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• OSHA-certified team members</li>
+                <li>• Current safety protocol training</li>
+                <li>• Zero incident track record</li>
+                <li>• Comprehensive safety planning</li>
+              </ul>
             </div>
           </div>
         </div>

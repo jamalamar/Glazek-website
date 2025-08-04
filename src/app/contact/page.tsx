@@ -98,12 +98,41 @@ export default function Contact() {
 
             <div>
               <div className="bg-gray-50 p-8 rounded-lg">
+                <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                  <div className="flex items-center gap-2 text-blue-800 font-medium mb-2">
+                    ⚡ 4-Hour Response Guarantee
+                  </div>
+                  <p className="text-blue-700 text-sm">
+                    Unlike traditional contractors who take days to respond, we reply within 4 hours during business hours. Fresh approach, fast service.
+                  </p>
+                </div>
+                
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Request a Quote
+                  Get Free Consultation - No Obligation
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Fill out the form below and we&#39;ll get back to you within 24 hours with a detailed proposal for your project.
+                  Ready to experience the fresh alternative to traditional construction? Let&#39;s discuss your project and show you how our modern approach delivers better results.
                 </p>
+                
+                <div className="mb-6 grid grid-cols-2 gap-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>No pressure sales</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>Transparent pricing</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>Modern technology</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>Complete project focus</span>
+                  </div>
+                </div>
+                
                 <ContactForm />
               </div>
             </div>
