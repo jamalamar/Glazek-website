@@ -48,44 +48,17 @@ export default function ContactForm() {
     return (
       <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
         <div className="text-green-600 text-xl font-semibold mb-2">
-          Thank you for choosing the fresh alternative!
+          Thank you for your inquiry!
         </div>
-        <p className="text-green-700 mb-4">
-          We've received your inquiry and will respond within 4 hours (not days like traditional contractors).
+        <p className="text-green-700">
+          We'll respond within 24 hours to discuss your glazing project.
         </p>
-        <div className="bg-white/50 rounded-lg p-4">
-          <p className="text-green-800 text-sm font-medium">
-            💡 As a new company, every project gets our complete focus and immediate attention
-          </p>
-        </div>
       </div>
     )
   }
 
   return (
-    <div className="space-y-6">
-      {/* Trust Building Header */}
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-        <div className="text-center">
-          <h3 className="text-lg font-semibold text-blue-900 mb-2">Why Choose the Fresh Alternative?</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-blue-800">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span>4-hour response guarantee</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span>Complete project focus</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span>Modern technology & methods</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -150,21 +123,24 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="projectType" className="block text-sm font-medium text-gray-700">
-          Project Type *
+          Glazing Service *
         </label>
         <select
           id="projectType"
-          {...register('projectType', { required: 'Please select a project type' })}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2 border"
+          {...register('projectType', { required: 'Please select a service type' })}
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 px-3 py-2 border"
         >
-          <option value="">Select Your Project Type</option>
-          <option value="commercial">Commercial Construction (Office, Retail, Industrial)</option>
-          <option value="residential">Residential Construction (Custom Homes, Multi-family)</option>
-          <option value="renovation">Renovation & Remodeling (Modernization Projects)</option>
-          <option value="design-build">Design-Build Services (Complete Project Management)</option>
-          <option value="consultation">Free Project Consultation (No Obligation)</option>
-          <option value="technology-integration">Smart Building & Technology Integration</option>
-          <option value="other">Other / Multiple Project Types</option>
+          <option value="">Select Your Glazing Service</option>
+          <option value="curtain-wall">Curtain Wall Installation</option>
+          <option value="storefront">Storefront Systems</option>
+          <option value="commercial-windows">Commercial Windows</option>
+          <option value="residential-windows">Residential Windows</option>
+          <option value="shower-doors">Shower Doors</option>
+          <option value="mirrors">Mirrors Installation</option>
+          <option value="canopies">Canopies & Skylights</option>
+          <option value="glazing-repair">Glazing Repair & Maintenance</option>
+          <option value="consultation">Free Glazing Consultation</option>
+          <option value="other">Other Glazing Services</option>
         </select>
         {errors.projectType && (
           <p className="mt-1 text-sm text-red-600">{errors.projectType.message}</p>
@@ -180,39 +156,30 @@ export default function ContactForm() {
           rows={6}
           {...register('message', { required: 'Please provide project details' })}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2 border"
-          placeholder="Tell us about your project vision, timeline, budget range, and any specific requirements. Don't worry about having all the details - we'll help you refine everything during our consultation!"
+          placeholder="Describe your glazing project and requirements"
         />
         {errors.message && (
           <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
         )}
       </div>
 
-      <div className="space-y-4">
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="w-full flex justify-center items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[48px]"
-        >
-          {isSubmitting ? (
-            <>
-              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-              Sending Your Message...
-            </>
-          ) : (
-            <>
-              Get My Free Consultation
-              <Send className="ml-2 h-4 w-4" />
-            </>
-          )}
-        </button>
-        
-        <div className="text-center text-sm text-gray-600">
-          <p>✅ No high-pressure sales tactics</p>
-          <p>✅ Honest, transparent pricing</p>
-          <p>✅ Fresh perspective on your project</p>
-        </div>
-      </div>
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full flex justify-center items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[48px]"
+      >
+        {isSubmitting ? (
+          <>
+            <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+            Sending...
+          </>
+        ) : (
+          <>
+            Get Free Consultation
+            <Send className="ml-2 h-4 w-4" />
+          </>
+        )}
+      </button>
     </form>
-    </div>
   )
 }

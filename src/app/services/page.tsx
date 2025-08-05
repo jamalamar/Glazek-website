@@ -1,56 +1,60 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Building, Home, Wrench, Hammer, ArrowRight } from 'lucide-react'
+import { Building, Home, Wrench, Users, ArrowRight, Square } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Services - Glazek LLC',
-  description: 'Comprehensive construction services including commercial buildings, residential projects, renovations, and project management.',
+  description: 'Professional glazing services including curtain walls, storefronts, commercial windows, canopies, mirrors, and complete glass solutions.',
 }
 
 export default function Services() {
   const services = [
     {
       icon: Building,
-      title: 'Commercial Construction',
-      description: 'Complete commercial building solutions from ground up to tenant improvements.',
+      title: 'Commercial Glazing Systems',
+      description: 'Professional installation of curtain walls, storefronts, and commercial windows.',
       features: [
-        'Office buildings',
-        'Retail centers',
-        'Industrial facilities',
-        'Mixed-use developments'
+        'Curtain walls',
+        'Storefront systems', 
+        'Commercial windows',
+        'Door entrances',
+        'Hollow metal frames'
       ]
     },
     {
       icon: Home,
-      title: 'Residential Construction',
-      description: 'Custom homes and residential developments built to the highest standards.',
+      title: 'Residential Glass Solutions',
+      description: 'Complete residential glazing services from windows to shower doors.',
       features: [
-        'Custom homes',
-        'Multi-family developments',
-        'Luxury residential projects',
-        'Sustainable practices'
+        'Residential windows',
+        'Shower doors',
+        'Mirrors',
+        'Door hardware',
+        'Glass panels'
+      ]
+    },
+    {
+      icon: Square,
+      title: 'Specialty Glazing Services',
+      description: 'Advanced glazing techniques and specialty glass installations.',
+      features: [
+        'Glazing & caulking',
+        'Skylights',
+        'Canopies',
+        'Sunshades',
+        'Brake metal'
       ]
     },
     {
       icon: Wrench,
-      title: 'Renovation & Remodeling',
-      description: 'Transform existing spaces with professional renovation services.',
+      title: 'Glass Maintenance & Repair',  
+      description: 'Professional maintenance and repair services for all glazing systems.',
       features: [
-        'Interior renovations',
-        'Building modernization',
-        'Historic preservation',
-        'Energy efficiency upgrades'
-      ]
-    },
-    {
-      icon: Hammer,
-      title: 'Project Management',
-      description: 'Comprehensive project management ensuring on-time, on-budget delivery.',
-      features: [
-        'Design-build services',
-        'Construction management',
-        'Schedule coordination',
-        'Quality assurance'
+        'Glass replacement',
+        'Seal repairs',
+        'Hardware maintenance',
+        'Emergency services',
+        'Preventive maintenance'
       ]
     }
   ]
@@ -61,10 +65,10 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Our Services
+              Our Glazing Services
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-              Modern construction solutions with proven expertise and complete dedication.
+              Professional glazing solutions with proven expertise and complete dedication to quality.
             </p>
           </div>
         </div>
@@ -100,10 +104,10 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Our Process
+              Our Glazing Process
             </h2>
             <p className="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">
-              Streamlined, technology-driven process with transparent communication.
+              Precision glazing installation with specialized techniques and quality assurance.
             </p>
           </div>
 
@@ -112,9 +116,9 @@ export default function Services() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur">
                 <span className="text-2xl font-bold text-white">1</span>
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-white">Consultation</h3>
+              <h3 className="mt-6 text-lg font-semibold text-white">Site Assessment</h3>
               <p className="mt-2 text-blue-100">
-                Understand your vision and requirements.
+                Evaluate glazing requirements and measurements.
               </p>
             </div>
 
@@ -122,9 +126,9 @@ export default function Services() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur">
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-white">Planning</h3>
+              <h3 className="mt-6 text-lg font-semibold text-white">Glass Fabrication</h3>
               <p className="mt-2 text-blue-100">
-                Project planning and design development.
+                Custom glass cutting and frame preparation.
               </p>
             </div>
 
@@ -132,9 +136,9 @@ export default function Services() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur">
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-white">Construction</h3>
+              <h3 className="mt-6 text-lg font-semibold text-white">Installation</h3>
               <p className="mt-2 text-blue-100">
-                Professional construction with regular updates.
+                Precision glazing installation and sealing.
               </p>
             </div>
 
@@ -142,9 +146,9 @@ export default function Services() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur">
                 <span className="text-2xl font-bold text-white">4</span>
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-white">Delivery</h3>
+              <h3 className="mt-6 text-lg font-semibold text-white">Quality Check</h3>
               <p className="mt-2 text-blue-100">
-                Final inspection and project handover.
+                Final inspection and warranty coverage.
               </p>
             </div>
           </div>

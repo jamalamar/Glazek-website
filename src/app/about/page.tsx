@@ -16,11 +16,11 @@ export default function About() {
               About Glazek LLC
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-              Modern construction solutions with proven expertise and innovative approaches.
+              Specialized glazing solutions with proven expertise in commercial and residential glass systems.
             </p>
             <div className="mt-8 inline-flex items-center px-4 py-2 bg-orange-50 border border-orange-200 rounded-full hover:bg-orange-100 transition-colors duration-300">
               <MapPin className="h-4 w-4 mr-2 text-orange-600" />
-              <span className="text-orange-800 font-medium">🏗️ Texas Based • Nationwide Service</span>
+              <span className="text-orange-800 font-medium">🪟 Texas Based Glazing Specialists</span>
             </div>
           </div>
         </div>
@@ -34,10 +34,10 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                To deliver superior construction solutions through technology-driven processes with the highest standards of safety, quality, and transparency.
+                To deliver superior glazing solutions through precision installation with the highest standards of safety, quality, and transparency.
               </p>
               <p className="mt-4 text-lg text-gray-600">
-                Every project benefits from our complete focus, modern technology, and commitment to exceeding expectations.
+                Every glazing project benefits from our specialized expertise, modern techniques, and commitment to exceeding expectations.
               </p>
             </div>
             <div className="mt-10 lg:mt-0">

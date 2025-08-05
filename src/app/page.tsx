@@ -9,20 +9,20 @@ export default function Home() {
           <div className="text-center">
             <div className="mb-8 inline-flex items-center px-4 py-2 bg-orange-500/20 backdrop-blur rounded-full text-white border border-orange-400/30">
               <MapPin className="h-4 w-4 mr-2 text-orange-300" />
-              <span className="text-sm font-medium">🏗️ Texas Licensed & Insured</span>
+              <span className="text-sm font-medium">Texas Based Glazing Specialists</span>
             </div>
             <h1 className="text-5xl font-bold tracking-tight sm:text-7xl mb-8">
-              Building Tomorrow&#39;s Structures Today
+              Professional Glazing &amp; Glass Solutions
             </h1>
             <p className="text-xl leading-8 text-blue-100 max-w-2xl mx-auto mb-12">
-              Innovative construction with proven expertise and modern approaches.
+              Specialized in curtain walls, storefronts, commercial windows, canopies, and complete glazing systems for commercial and residential projects.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
                 className="rounded-md bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-orange-600 hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                🚀 Get Free Consultation
+                🪟 Get Free Consultation
               </Link>
               <Link
                 href="tel:+15551234567"
@@ -42,7 +42,7 @@ export default function Home() {
               Why Choose Glazek LLC
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Modern construction with safety, technology, and personalized service.
+              Specialized glazing expertise with cutting-edge technology and precision installation.
             </p>
           </div>
 
@@ -51,9 +51,9 @@ export default function Home() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-orange-100 to-orange-200 mb-6 group-hover:from-orange-200 group-hover:to-orange-300 transition-all duration-300 shadow-lg">
                 <Shield className="h-8 w-8 text-orange-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🦺 Safety First</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Glazing Safety Experts</h3>
               <p className="text-gray-600">
-                Latest safety protocols with zero incidents.
+                Specialized fall protection and high-rise glazing safety protocols.
               </p>
             </div>
 
@@ -61,9 +61,9 @@ export default function Home() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-100 to-blue-200 mb-6 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300 shadow-lg">
                 <Award className="h-8 w-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">⚡ Modern Technology</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Precision Installation</h3>
               <p className="text-gray-600">
-                Cutting-edge tools and innovative methods.
+                Advanced glazing equipment and structural glazing expertise.
               </p>
             </div>
 
@@ -71,9 +71,9 @@ export default function Home() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-100 to-green-200 mb-6 group-hover:from-green-200 group-hover:to-green-300 transition-all duration-300 shadow-lg">
                 <Users className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Dedicated Focus</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Façade Specialists</h3>
               <p className="text-gray-600">
-                Your project gets our complete attention.
+                Exclusive focus on glazing and curtain wall systems.
               </p>
             </div>
           </div>
@@ -85,39 +85,39 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 bg-orange-500/20 rounded-full text-orange-300 font-medium text-sm mb-4 border border-orange-400/30">
-              🏗️ Construction Excellence
+              🏢 Glazing Excellence
             </div>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-              Our Approach
+              Our Glazing Process
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Modern technology and transparent communication for superior results.
+              Precision engineering and expert installation for architectural glass systems.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             <div className="text-center group hover:scale-110 transition-transform duration-300">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-orange-500/20 to-orange-600/20 backdrop-blur mb-6 group-hover:from-orange-500/30 group-hover:to-orange-600/30 border border-orange-400/30 shadow-lg">
-                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">📱</span>
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">📐</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">📊 Real-Time Tracking</h3>
-              <p className="text-gray-300">Live updates and instant communication.</p>
+              <h3 className="text-lg font-semibold mb-3">Engineering Analysis</h3>
+              <p className="text-gray-300">Structural calculations and glazing design.</p>
             </div>
 
             <div className="text-center group hover:scale-110 transition-transform duration-300">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur mb-6 group-hover:from-blue-500/30 group-hover:to-blue-600/30 border border-blue-400/30 shadow-lg">
-                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🎯</span>
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🏗️</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">📐 Precision Planning</h3>
-              <p className="text-gray-300">3D modeling and detailed project management.</p>
+              <h3 className="text-lg font-semibold mb-3">Fabrication & Prep</h3>
+              <p className="text-gray-300">Custom glazing unit preparation and quality control.</p>
             </div>
 
             <div className="text-center group hover:scale-110 transition-transform duration-300">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 backdrop-blur mb-6 group-hover:from-yellow-500/30 group-hover:to-yellow-600/30 border border-yellow-400/30 shadow-lg">
                 <span className="text-2xl group-hover:scale-110 transition-transform duration-300">⚡</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">⚡ Quick Response</h3>
-              <p className="text-gray-300">Fast decisions and responsive service.</p>
+              <h3 className="text-lg font-semibold mb-3">Expert Installation</h3>
+              <p className="text-gray-300">Precision glazing and weatherproofing.</p>
             </div>
           </div>
         </div>

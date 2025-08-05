@@ -17,7 +17,7 @@ export default function Contact() {
               Contact Us
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-              Get in touch for a consultation and personalized quote.
+              Get in touch for a glazing consultation and personalized quote for your glass installation needs.
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                    <p className="text-gray-600">info@glazekllc.com</p>
+                    <p className="text-gray-600">glazek.contact@gmail.com</p>
                     <p className="text-sm text-gray-500">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -59,11 +59,9 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Office Location</h3>
+                    <h3 className="text-lg font-medium text-gray-900">Service Area</h3>
                     <p className="text-gray-600">
-                      123 Construction Way<br />
-                      Suite 100<br />
-                      Your City, State 12345
+                      Texas-based with nationwide service
                     </p>
                   </div>
                 </div>
@@ -105,11 +103,8 @@ export default function Contact() {
                 </div>
                 
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Get Free Consultation
+                  Get Free Glazing Consultation
                 </h2>
-                <p className="text-gray-600 mb-8">
-                  Let's discuss your project and show you how our approach delivers better results.
-                </p>
                 
                 <ContactForm />
               </div>
@@ -131,11 +126,11 @@ export default function Contact() {
               <div className="flex items-center mb-3">
                 <span className="text-2xl mr-3 group-hover:scale-110 transition-transform duration-300">⏱️</span>
                 <h3 className="text-lg font-semibold text-gray-900">
-                  How long does a typical project take?
+                  How long does a typical glazing project take?
                 </h3>
               </div>
               <p className="text-gray-600">
-                Most residential projects take 30-90 days, commercial projects 90-180 days. We provide detailed timelines during consultation.
+                Most residential glazing projects take 1-3 weeks, commercial curtain wall projects 4-12 weeks. We provide detailed timelines during consultation.
               </p>
             </div>
 

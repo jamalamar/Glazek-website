@@ -5,46 +5,46 @@ import ImagePlaceholder from '@/components/ImagePlaceholder'
 
 export const metadata: Metadata = {
   title: 'Projects - Glazek LLC',
-  description: 'Explore our portfolio of completed construction projects showcasing quality craftsmanship and innovative solutions.',
+  description: 'Explore our portfolio of completed glazing projects showcasing quality craftsmanship and innovative glass solutions.',
 }
 
 export default function Projects() {
   const projects = [
     {
-      title: 'Modern Office Building',
-      category: 'Commercial',
+      title: 'Commercial Curtain Wall Installation',
+      category: 'Commercial Glazing',
       location: 'Texas',
       year: '2024',
-      description: 'Cutting-edge office facility with sustainable design, completed ahead of schedule.',
+      description: 'High-rise curtain wall system with energy-efficient glazing, completed ahead of schedule.',
       features: [
-        'Energy-efficient systems',
-        'Smart building technology',
+        'Structural glazing system',
+        'Energy-efficient glass',
         'Completed 2 weeks early',
         'Zero safety incidents'
       ],
-      imageUrl: '', // Add URL here when professional photos are ready
+      imageUrl: '',
       placeholderIcon: '🏢',
-      placeholderText: 'Professional office building photos being finalized'
+      placeholderText: 'Curtain wall project photos coming soon'
     },
     {
-      title: 'Custom Residential Project',
-      category: 'Residential',
+      title: 'Residential Window & Storefront Project',
+      category: 'Residential Glazing',
       location: 'Texas',
       year: '2024',
-      description: 'Luxury custom home with innovative construction techniques and premium craftsmanship.',
+      description: 'Custom residential windows, mirrors, and shower doors with premium glazing.',
       features: [
-        'Custom architectural design',
-        'Premium materials',
-        'Advanced home automation',
+        'Custom window installation',
+        'Premium shower doors',
+        'Mirror installations',
         'Exceeded client expectations'
       ],
-      imageUrl: '', // Add URL here when professional photos are ready
-      placeholderIcon: '🏡',
-      placeholderText: 'Custom home photos coming soon'
+      imageUrl: '',
+      placeholderIcon: '🪟',
+      placeholderText: 'Residential glazing photos coming soon'
     }
   ]
 
-  const categories = ['All', 'Commercial', 'Residential']
+  const categories = ['All', 'Commercial Glazing', 'Residential Glazing']
 
   return (
     <div className="bg-white">
@@ -52,10 +52,10 @@ export default function Projects() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Our Projects
+              🪟 Our Glazing Projects
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-              Quality over quantity. Each project represents our complete focus and commitment to excellence.
+              Quality glazing installations. Each project represents our specialized expertise and commitment to excellence.
             </p>
           </div>
         </div>
@@ -71,9 +71,9 @@ export default function Projects() {
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Modern Office Building</h3>
+                <h3 className="text-2xl font-bold mb-4">Commercial Curtain Wall Project</h3>
                 <p className="text-blue-100 mb-6">
-                  Delivered 2 weeks ahead of schedule with zero safety incidents and complete client satisfaction.
+                  High-rise curtain wall installation delivered 2 weeks ahead of schedule with zero safety incidents and complete client satisfaction.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="flex items-center gap-2">
@@ -86,7 +86,7 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>Smart building tech</span>
+                    <span>Structural glazing</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
