@@ -7,9 +7,9 @@ export default function Home() {
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="mb-8 inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur rounded-full text-white">
-              <MapPin className="h-4 w-4 mr-2" />
-              <span className="text-sm font-medium">Texas Licensed & Insured</span>
+            <div className="mb-8 inline-flex items-center px-4 py-2 bg-orange-500/20 backdrop-blur rounded-full text-white border border-orange-400/30">
+              <MapPin className="h-4 w-4 mr-2 text-orange-300" />
+              <span className="text-sm font-medium">🏗️ Texas Licensed & Insured</span>
             </div>
             <h1 className="text-5xl font-bold tracking-tight sm:text-7xl mb-8">
               Building Tomorrow&#39;s Structures Today
@@ -20,13 +20,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="rounded-md bg-white px-8 py-4 text-lg font-semibold text-blue-600 shadow-sm hover:bg-blue-50 transition-all"
+                className="rounded-md bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-orange-600 hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Get Free Consultation
+                🚀 Get Free Consultation
               </Link>
               <Link
                 href="tel:+15551234567"
-                className="text-lg font-semibold text-white hover:text-blue-100 flex items-center justify-center px-8 py-4 border-2 border-white/20 rounded-md hover:border-white/40 transition-all"
+                className="text-lg font-semibold text-white hover:text-orange-300 flex items-center justify-center px-8 py-4 border-2 border-orange-400/40 rounded-md hover:border-orange-400/80 hover:bg-orange-500/10 transition-all duration-300"
               >
                 📞 Call (555) 123-4567
               </Link>
@@ -47,31 +47,31 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-16 md:grid-cols-3">
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 mb-6">
-                <Shield className="h-8 w-8 text-blue-600" />
+            <div className="text-center group hover:scale-105 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-orange-100 to-orange-200 mb-6 group-hover:from-orange-200 group-hover:to-orange-300 transition-all duration-300 shadow-lg">
+                <Shield className="h-8 w-8 text-orange-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Safety First</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">🦺 Safety First</h3>
               <p className="text-gray-600">
                 Latest safety protocols with zero incidents.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 mb-6">
-                <Award className="h-8 w-8 text-blue-600" />
+            <div className="text-center group hover:scale-105 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-100 to-blue-200 mb-6 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300 shadow-lg">
+                <Award className="h-8 w-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Modern Technology</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">⚡ Modern Technology</h3>
               <p className="text-gray-600">
                 Cutting-edge tools and innovative methods.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 mb-6">
-                <Users className="h-8 w-8 text-blue-600" />
+            <div className="text-center group hover:scale-105 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-100 to-green-200 mb-6 group-hover:from-green-200 group-hover:to-green-300 transition-all duration-300 shadow-lg">
+                <Users className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Dedicated Focus</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Dedicated Focus</h3>
               <p className="text-gray-600">
                 Your project gets our complete attention.
               </p>
@@ -80,9 +80,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 bg-gray-900 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-32 bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTQwIDQwSDBoMjB2LTIwaDIweiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-orange-500/20 rounded-full text-orange-300 font-medium text-sm mb-4 border border-orange-400/30">
+              🏗️ Construction Excellence
+            </div>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
               Our Approach
             </h2>
@@ -92,27 +96,27 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur mb-6">
-                <span className="text-2xl">📱</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-orange-500/20 to-orange-600/20 backdrop-blur mb-6 group-hover:from-orange-500/30 group-hover:to-orange-600/30 border border-orange-400/30 shadow-lg">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">📱</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Real-Time Tracking</h3>
+              <h3 className="text-lg font-semibold mb-3">📊 Real-Time Tracking</h3>
               <p className="text-gray-300">Live updates and instant communication.</p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur mb-6">
-                <span className="text-2xl">🎯</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur mb-6 group-hover:from-blue-500/30 group-hover:to-blue-600/30 border border-blue-400/30 shadow-lg">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🎯</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Precision Planning</h3>
+              <h3 className="text-lg font-semibold mb-3">📐 Precision Planning</h3>
               <p className="text-gray-300">3D modeling and detailed project management.</p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur mb-6">
-                <span className="text-2xl">⚡</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 backdrop-blur mb-6 group-hover:from-yellow-500/30 group-hover:to-yellow-600/30 border border-yellow-400/30 shadow-lg">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">⚡</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Quick Response</h3>
+              <h3 className="text-lg font-semibold mb-3">⚡ Quick Response</h3>
               <p className="text-gray-300">Fast decisions and responsive service.</p>
             </div>
           </div>
@@ -165,16 +169,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+          <div className="bg-gradient-to-r from-white to-orange-50 rounded-xl shadow-xl p-8 text-center border-2 border-orange-100 hover:border-orange-200 transition-all duration-300">
+            <div className="mb-4">
+              <span className="text-4xl">🏗️</span>
+            </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to Start Your Project?</h3>
             <p className="text-gray-600 mb-6">
               Contact us for a consultation and see how we can bring your vision to life.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center px-6 py-4 text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center px-8 py-4 text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
-              Schedule Free Consultation
+              🚀 Schedule Free Consultation
             </Link>
           </div>
         </div>

@@ -18,9 +18,9 @@ export default function About() {
             <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
               Modern construction solutions with proven expertise and innovative approaches.
             </p>
-            <div className="mt-8 inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full">
-              <MapPin className="h-4 w-4 mr-2 text-blue-600" />
-              <span className="text-blue-800 font-medium">Texas Based • Nationwide Service</span>
+            <div className="mt-8 inline-flex items-center px-4 py-2 bg-orange-50 border border-orange-200 rounded-full hover:bg-orange-100 transition-colors duration-300">
+              <MapPin className="h-4 w-4 mr-2 text-orange-600" />
+              <span className="text-orange-800 font-medium">🏗️ Texas Based • Nationwide Service</span>
             </div>
           </div>
         </div>
@@ -77,21 +77,30 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg text-center group hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-orange-200">
+              <div className="mb-4">
+                <span className="text-3xl">🦺</span>
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Safety First</h3>
               <p className="text-gray-600">
                 Unwavering commitment to safety standards on every project.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg text-center group hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-blue-200">
+              <div className="mb-4">
+                <span className="text-3xl">⚡</span>
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Quality Excellence</h3>
               <p className="text-gray-600">
                 Superior craftsmanship and attention to detail in every aspect.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg text-center group hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-green-200">
+              <div className="mb-4">
+                <span className="text-3xl">💬</span>
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Transparent Communication</h3>
               <p className="text-gray-600">
                 Open, honest communication throughout every project.
@@ -142,33 +151,33 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
-                <span className="text-2xl">🏗️</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-100 to-green-200 mb-4 group-hover:shadow-lg transition-all duration-300">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🏗️</span>
               </div>
               <h3 className="font-semibold text-gray-900">Licensed</h3>
               <p className="text-sm text-gray-600">Texas Contractor</p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
-                <span className="text-2xl">🛡️</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-100 to-blue-200 mb-4 group-hover:shadow-lg transition-all duration-300">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🛡️</span>
               </div>
               <h3 className="font-semibold text-gray-900">Insured</h3>
               <p className="text-sm text-gray-600">$2M Coverage</p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
-                <span className="text-2xl">⚡</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-yellow-100 to-yellow-200 mb-4 group-hover:shadow-lg transition-all duration-300">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">⚡</span>
               </div>
               <h3 className="font-semibold text-gray-900">OSHA Certified</h3>
               <p className="text-sm text-gray-600">Safety Standards</p>
             </div>
 
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-4">
-                <span className="text-2xl">🏆</span>
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-orange-100 to-orange-200 mb-4 group-hover:shadow-lg transition-all duration-300">
+                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🏆</span>
               </div>
               <h3 className="font-semibold text-gray-900">BBB A+ Rated</h3>
               <p className="text-sm text-gray-600">Accredited</p>

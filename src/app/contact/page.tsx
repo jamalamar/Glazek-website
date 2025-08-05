@@ -98,8 +98,8 @@ export default function Contact() {
 
             <div>
               <div className="bg-gray-50 p-8 rounded-lg">
-                <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                  <div className="flex items-center gap-2 text-blue-800 font-medium">
+                <div className="mb-6 p-4 bg-orange-50 border border-orange-200 rounded-lg hover:bg-orange-100 transition-colors duration-300">
+                  <div className="flex items-center gap-2 text-orange-800 font-medium">
                     ⚡ 24-Hour Response Guarantee
                   </div>
                 </div>
@@ -127,28 +127,37 @@ export default function Contact() {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                How long does a typical project take?
-              </h3>
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-orange-200 group">
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-3 group-hover:scale-110 transition-transform duration-300">⏱️</span>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  How long does a typical project take?
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Most residential projects take 30-90 days, commercial projects 90-180 days. We provide detailed timelines during consultation.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Do you handle permits and inspections?
-              </h3>
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-200 group">
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-3 group-hover:scale-110 transition-transform duration-300">📝</span>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Do you handle permits and inspections?
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Yes, we handle all permits, inspections, and regulatory compliance.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Are you licensed and insured?
-              </h3>
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-green-200 group">
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-3 group-hover:scale-110 transition-transform duration-300">🛡️</span>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Are you licensed and insured?
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Yes, fully licensed, bonded, and insured with comprehensive coverage.
               </p>
