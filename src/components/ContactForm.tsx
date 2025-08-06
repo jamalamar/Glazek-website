@@ -83,7 +83,7 @@ export default function ContactForm() {
   return (
     <div className="bg-gradient-to-br from-white to-blue-50/30 p-8 rounded-2xl shadow-xl border border-blue-100">
       {/* Hidden form for Netlify detection */}
-      <form name="contact" netlify="true" hidden>
+      <form name="contact" data-netlify="true" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <input type="tel" name="phone" />
