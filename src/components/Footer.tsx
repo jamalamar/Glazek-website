@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-blue-400" />
-                <span className="text-gray-300">(555) 123-4567</span>
+                <span className="text-gray-300">(346) 538-5428</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-blue-400" />
@@ -55,6 +55,17 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-300">
             © {currentYear} Glazek LLC. All rights reserved.
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            Made by{' '}
+            <Link 
+              href="https://digihoriz.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              DigiHoriz
+            </Link>
           </p>
         </div>
       </div>

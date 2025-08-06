@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
@@ -10,15 +11,53 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="bg-white">
-      <section className="py-32 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative py-32 bg-gradient-to-br from-blue-600 to-blue-800 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Modern office building with professional glazing"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-blue-800/80"></div>
+        </div>
+        
+        {/* Subtle decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
+          <div className="absolute bottom-20 right-20 w-24 h-24 bg-blue-300/10 rounded-full blur-lg"></div>
+        </div>
+        
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <div className="mb-8 inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full">
+              <span className="text-blue-100 text-sm font-medium">📞 Get Your Free Quote</span>
+            </div>
+            
+            <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl mb-6">
               Contact Us
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-              Get in touch for a glazing consultation and personalized quote for your glass installation needs.
+            <p className="text-xl leading-8 text-blue-100 max-w-3xl mx-auto mb-12">
+              Get in touch for a professional consultation and personalized quote for your glass installation needs.
             </p>
+            
+            {/* Contact highlights */}
+            <div className="flex flex-wrap justify-center gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">24hrs</div>
+                <div className="text-blue-200 text-sm">Response Time</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">Free</div>
+                <div className="text-blue-200 text-sm">Consultation</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">Texas</div>
+                <div className="text-blue-200 text-sm">Based Team</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -38,7 +77,7 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">(346) 538-5428</p>
                     <p className="text-sm text-gray-500">Monday - Friday, 8:00 AM - 6:00 PM</p>
                   </div>
                 </div>
@@ -89,7 +128,7 @@ export default function Contact() {
                   For construction emergencies and urgent repairs, we offer 24/7 emergency services.
                 </p>
                 <p className="text-blue-600 font-medium">
-                  Emergency Hotline: (555) 999-HELP
+                  Emergency Hotline: (346) 538-5428
                 </p>
               </div>
             </div>
@@ -103,7 +142,7 @@ export default function Contact() {
                 </div>
                 
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Get Free Glazing Consultation
+                  Get Free Consultation
                 </h2>
                 
                 <ContactForm />

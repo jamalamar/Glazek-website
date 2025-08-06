@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Target, Eye, Award, Users, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -9,13 +10,23 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="bg-white">
-      <section className="py-32 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative py-32 bg-gray-50 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Modern office building with glass facade"
+            fill
+            className="object-cover opacity-100"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-200/80 to-blue-900/40"></div>
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               About Glazek LLC
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-6 text-lg leading-8 text-gray-900 max-w-2xl mx-auto">
               Specialized glazing solutions with proven expertise in commercial and residential glass systems.
             </p>
             <div className="mt-8 inline-flex items-center px-4 py-2 bg-orange-50 border border-orange-200 rounded-full hover:bg-orange-100 transition-colors duration-300">
@@ -110,8 +121,18 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative py-32 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Professional glazing team at work"
+            fill
+            className="object-cover opacity-100"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-200/70 to-gray-400/70"></div>
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Why Choose Glazek LLC

@@ -1,11 +1,23 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Shield, Users, Award, MapPin } from 'lucide-react'
 
 export default function Home() {
   return (
     <div>
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg"
+            alt="Modern glass building facade"
+            fill
+            className="object-cover opacity-100"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-800/80"></div>
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-8 inline-flex items-center px-4 py-2 bg-orange-500/20 backdrop-blur rounded-full text-white border border-orange-400/30">
               <MapPin className="h-4 w-4 mr-2 text-orange-300" />
@@ -25,10 +37,10 @@ export default function Home() {
                 🪟 Get Free Consultation
               </Link>
               <Link
-                href="tel:+15551234567"
+                href="tel:+13465385428"
                 className="text-lg font-semibold text-white hover:text-orange-300 flex items-center justify-center px-8 py-4 border-2 border-orange-400/40 rounded-md hover:border-orange-400/80 hover:bg-orange-500/10 transition-all duration-300"
               >
-                📞 Call (555) 123-4567
+                📞 Call (346) 538-5428
               </Link>
             </div>
           </div>
@@ -140,8 +152,13 @@ export default function Home() {
                 &ldquo;They treated our project with exceptional attention to detail and delivered outstanding results.&rdquo;
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-blue-600 font-semibold">TR</span>
+                <div className="relative w-12 h-12 mr-4">
+                  <Image
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+                    alt="Tom Richardson"
+                    fill
+                    className="rounded-full object-cover"
+                  />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Tom Richardson</div>
@@ -158,8 +175,13 @@ export default function Home() {
                 &ldquo;Their modern approach and constant communication made our renovation seamless and stress-free.&rdquo;
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-blue-600 font-semibold">LC</span>
+                <div className="relative w-12 h-12 mr-4">
+                  <Image
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+                    alt="Lisa Chen"
+                    fill
+                    className="rounded-full object-cover"
+                  />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Lisa Chen</div>
