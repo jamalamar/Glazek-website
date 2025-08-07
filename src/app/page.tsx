@@ -37,10 +37,10 @@ export default function Home() {
                 🪟 Get Free Consultation
               </Link>
               <Link
-                href="tel:+13465385428"
+                href="tel:+13465315049"
                 className="text-lg font-semibold text-white hover:text-orange-300 flex items-center justify-center px-8 py-4 border-2 border-orange-400/40 rounded-md hover:border-orange-400/80 hover:bg-orange-500/10 transition-all duration-300"
               >
-                📞 Call (346) 538-5428
+                📞 Call (346) 531-5049
               </Link>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-100 to-green-200 mb-6 group-hover:from-green-200 group-hover:to-green-300 transition-all duration-300 shadow-lg">
                 <Users className="h-8 w-8 text-green-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Façade Specialists</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Facade Specialists</h3>
               <p className="text-gray-600">
                 Exclusive focus on glazing and curtain wall systems.
               </p>

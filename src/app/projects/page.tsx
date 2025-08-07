@@ -525,12 +525,12 @@ export default function Projects() {
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    href="tel:+13465385428"
+                    href="tel:+13465315049"
                     className="group px-8 py-5 border-2 border-blue-600 text-lg font-bold rounded-2xl text-blue-700 hover:bg-blue-600 hover:text-white hover:border-blue-700 transition-all duration-300 hover:shadow-lg hover:scale-105 bg-white/50 backdrop-blur-sm min-w-[240px]"
                   >
                     <div className="flex items-center justify-center gap-3">
                       <div className="w-5 h-5 rounded-full bg-green-500 animate-pulse"></div>
-                      <span>Call (346) 538-5428</span>
+                      <span>Call (346) 531-5049</span>
                     </div>
                   </Link>
                 </div>

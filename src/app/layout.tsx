@@ -80,7 +80,7 @@ export default function RootLayout({
     "description": "Professional glazing contractors specializing in curtain walls, storefronts, commercial windows, and complete glass systems.",
     "url": "https://glazekllc.com",
     "logo": "https://glazekllc.com/images/hero-og.jpg",
-    "telephone": "+13465385428",
+    "telephone": "+13465315049",
     "address": {
       "@type": "PostalAddress",
       "addressRegion": "TX",

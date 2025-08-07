@@ -112,7 +112,7 @@ Optimized for excellent performance scores:
 
 Update these placeholder values with real information:
 
-- **Phone**: (555) 123-4567 → Your actual number
+- **Phone**: (346) 531-5049 → Updated
 - **Email**: info@glazekllc.com → Your actual email  
 - **Address**: Update in contact page and footer
 - **License**: TX License #123456 → Your actual license

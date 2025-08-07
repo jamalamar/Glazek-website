@@ -77,7 +77,7 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">(346) 538-5428</p>
+                    <p className="text-gray-600">(346) 531-5049</p>
                     <p className="text-sm text-gray-500">Monday - Friday, 8:00 AM - 6:00 PM</p>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Contact() {
                   For construction emergencies and urgent repairs, we offer 24/7 emergency services.
                 </p>
                 <p className="text-blue-600 font-medium">
-                  Emergency Hotline: (346) 538-5428
+                  Emergency Hotline: (346) 531-5049
                 </p>
               </div>
             </div>
